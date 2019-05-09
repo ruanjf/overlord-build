@@ -9,5 +9,5 @@ ENV overlord_version 1.7.0
 RUN curl -o overlord-$overlord_version.tar.gz https://codeload.github.com/bilibili/overlord/tar.gz/$overlord_version
 RUN tar zxf overlord-$overlord_version.tar.gz
 RUN cd overlord-$overlord_version && make build
-RUN cd ../ && tar zcvf overlord-$overlord_version.bin.tar.gz overlord-$overlord_version/
+RUN tar zcvf overlord-$overlord_version.bin.tar.gz overlord-$overlord_version/
 RUN rm -rf go$golang_version.linux-amd64.tar.gz overlord-$overlord_version/ overlord-$overlord_version.tar.gz
