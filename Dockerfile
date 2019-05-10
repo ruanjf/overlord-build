@@ -10,4 +10,4 @@ RUN curl -o overlord-$overlord_version.tar.gz https://codeload.github.com/bilibi
 RUN tar zxf overlord-$overlord_version.tar.gz
 RUN cd overlord-$overlord_version && make build
 RUN tar zcf overlord-$overlord_version.bin.tar.gz overlord-$overlord_version/
-RUN rm -rf go$golang_version.linux-amd64.tar.gz overlord-$overlord_version/ overlord-$overlord_version.tar.gz
+RUN rm -rf go$golang_version.linux-amd64.tar.gz overlord-$overlord_version.tar.gz
